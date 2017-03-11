@@ -1,0 +1,58 @@
++ 0. przenoszenie docka (poprawic) i zapisywanie pozycji w configu
++ 0.5. dodanie folderu dodaje pliki (filtrowanie)
++ 1. wybieranie playlisty i tworzenie nowej
++ 2. czyszczenie kolejki odtwarzania
++ 3. playback_control::set_stop_after_current(bool p_state) (do punktu 5.)
++ 4. ikonka
++ 5. pod prawym klawiszem menu: Copy Playing (do schowka aktualny utwor), Hide Dock, Exit
++ 6. konfiguracja w ustawieniach (show dock) (dzialanie scrolla)
+x 7. malutkie przyciski PREV, PLAY/PAUSE, NEXT
++ 8. scrollem mozna zmieniac utwor i ew. odpauzowac go
+* 9. plynne przejscie przezroczystosci w ONMOUSEMOVE i ONMOUSELEAVE
++ 10.polskie znaki w Now Playing pod prawym klikiem
++ 11.baloon
+* 12.wybranie skina docka
+x 13.Music TitleBar http://jorydownloader.sourceforge.net/fb2k/ dodac
+x 14.kiedy playlista sie konczy, wlaczyc nastepna (dodatkowe ustawienie czy tak robic)
++ 15.aktywna playlista, opcje: Show, Add Folder, Add Files
+x 16.playlist queue manager (pomysl na inna wtyczke)
+x+17.minimalizacja po "Create Playlist i Add Files" konfigurowalna (zrobilem to automatycznie zalezne od sytuacji)
++ 18.Opcja Order
++ 19.bug z Columns UI
++ 20.aktualna playlista niegrana musi byc zaznaczona i tez miec opcje
+* 21.bug: okno czasem sie chowa na vista
+- 22.bug: foobar zawiesza caly system przy wylaczaniu foobara X-em
+x 23.bug: scroll nad dockiem powinien zatrzymac dalsza akcje (nie da sie, system nie pozwala)
++ 24.feature: dodawanie utworow w menu "Current Playlist" oraz wyrzucanie Dead Entries etc. opcje z "Playlist->(...)"
+* 25.feature: middle click pokazuje pasek glosnosci foobara
++ 26.add option in settings: dropping folder creates new playlist (or adds to existing)
++ 27.shift nie dziala
++ 28.bug: autosave zapisuje konfiguracje a nie playliste
+x 29.bug/feature: autoname nie dziala jak powinno? (usunieta opcja, po czesci dodana przy dodawaniu pojedynczego folderu)
+* 30.feature: mozliwosc ustawienia poziomu przezroczystosci (w %)
+* 31.opcja "Next Album" - tylko gdy jest wybrane Shuffle Albums
++ 32.wybor co oznacza Current playlist (grajaca czy zaznaczona)
+* 33.optymalizacja dodawania folderow pod katem wbudowanej funkcji Autoplaylist!
+* 34.feature: okladka albumu zamiast ikony alien cat
++ 35.feautre/bug: scroll+balloon - balloon powinien odswiezac sie przy zmianie utworu
+* 36. feature: dodac pasek (moze byc w balloonie ale lepiej taki maly zaraz pod ikonka) ktory informuje ile utworu juz przeszlo
+* 36. feature: dodatkowa wizualizacja zamiast ikony alien cat
+* 37. feature: balloon - $right($muldiv(%_time_elapsed_seconds%,100,%_length_seconds%),3)'%'  %playback_time%
+* 38.feature: obs³uga radio - dodawanie playlisty z radiem i lokacj¹ oraz wyœwietlanie aktualnego granego tytu³u z radia w balonie
++ 39.feature: Play random w podmenu Playlists
++ 40.feature: przycisk scrolla myszy pauzuje utwor
++ 41.fix: teraz nie powinno sie tak czesto minimalizowac
++ 42.fix: opcja "Current playlist means selected playlist (otherwise playing playlist)" nic nie daje
+* 43.feature: podglasnianie left click+scroll
++ 44.change: osobno pokazac Current Playlist i Selected Playlist (jezeli ta jest inna od odgrywanej)
+* 45.bug: (Playlist->Create) przy tworzeniu nowej playlisty jak sie anuluje to nie powinno juz pytac o folder
+* 46.change: dac opcje ustawiania w jakies bardziej widoczne miejsce niz Advanced
+
+0.2.6.0 changes:
+ - click scroll pauzuje
+ - rozdzielone current playlist i selected playlist
+ - teraz kazda playlista z listy ma swoje opcje (wczesniej tylko aktywna lub odtwarzana)
+ - jest mozliwe cofniecie zmian na playliscie dokonanych przez foodocka (opcja undo w samym foobarze)
+ - losowanie playlisty
+ * ustawialny poziom przezroczystosci
+ - podwojny click scrollem zmienia wyglad

@@ -1,0 +1,4 @@
+#include "resource.h"
+//#include <afxres.h>
+
+IDB_ICON BITMAP "icon.bmp"
